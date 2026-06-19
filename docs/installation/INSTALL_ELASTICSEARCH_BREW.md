@@ -362,8 +362,8 @@ brew services restart elastic/tap/elasticsearch-full
 ## 🔗 Related Files
 
 - [INSTALL_ELASTICSEARCH_DIRECT.md](INSTALL_ELASTICSEARCH_DIRECT.md) - Direct installation method
-- [SETUP.md](SETUP.md) - Complete setup guide
-- [README.md](README.md) - Project overview
+- [SETUP.md](../guides/SETUP.md) - Complete setup guide
+- [README.md](../../README.md) - Project overview
 
 ---
 

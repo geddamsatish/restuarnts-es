@@ -1,10 +1,36 @@
-# Generated files
+# Generated/Temporary files
 *.ndjson
 *.log
+*.tmp
 
-# Keep schema files
-!schema.json
-!example_data.json
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+.Python
+build/
+dist/
+venv/
+env/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Keep these tracked
+!restaurants/data/Bengaluru_Restaurants.csv
+!ramayana/data/ramayana.json
+!*.md
+!*.json
+!*.py
 
 # Python
 __pycache__/

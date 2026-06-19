@@ -47,14 +47,11 @@ Ancient Hindu scripture with 23,402 verses including Sanskrit text, transliterat
 
 ### Quick Installation (macOS)
 
-```bash
-# Install Elasticsearch
-brew install elasticsearch
-brew services start elasticsearch
+👉 **[Complete Installation Guide](docs/installation/README.md)**
 
-# Verify
-curl http://localhost:9200
-```
+Choose your method:
+- **[Homebrew (Recommended)](docs/installation/INSTALL_ELASTICSEARCH_BREW.md)** - Easiest, 2-3 minutes
+- **[Direct Installation](docs/installation/INSTALL_ELASTICSEARCH_DIRECT.md)** - Full control
 
 ## 📁 Project Structure
 
@@ -188,12 +185,13 @@ Complete guide for the Ramayana Shlokas dataset:
 
 ---
 
-## 📖 Additional Resources
+## 📖 Documentation
 
-- **[SETUP.md](SETUP.md)** - Detailed setup for all operating systems
+- **[Documentation Index](docs/INDEX.md)** - Complete documentation map
+- **[Installation Guide](docs/installation/README.md)** - Choose your installation method
+- **[Setup Guide](docs/guides/SETUP.md)** - Post-installation configuration
 - **[Elasticsearch Docs](https://www.elastic.co/guide/index.html)** - Official documentation
 - **[Query DSL](https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl.html)** - Query language guide
-- **[Geo Queries](https://www.elastic.co/guide/en/elasticsearch/reference/current/geo-queries.html)** - Location-based queries
 - **[Aggregations](https://www.elastic.co/guide/en/elasticsearch/reference/current/search-aggregations.html)** - Data analytics
 
 ## 🔗 Data Sources

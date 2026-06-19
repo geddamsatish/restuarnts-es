@@ -22,7 +22,7 @@ brew install elastic/tap/elasticsearch-full
 brew services start elastic/tap/elasticsearch-full
 curl http://localhost:9200
 ```
-👉 **[Complete Homebrew Guide](INSTALL_ELASTICSEARCH_BREW.md)**
+👉 **[Complete Homebrew Guide](../installation/INSTALL_ELASTICSEARCH_BREW.md)****
 
 #### 📥 Direct Installation (Recommended for Control)
 ```bash
@@ -32,10 +32,10 @@ tar -xzf elasticsearch-8.10.0-darwin-aarch64.tar.gz
 cd elasticsearch-8.10.0
 ./bin/elasticsearch
 ```
-👉 **[Complete Direct Installation Guide](INSTALL_ELASTICSEARCH_DIRECT.md)**
+👉 **[Complete Direct Installation Guide](../installation/INSTALL_ELASTICSEARCH_DIRECT.md)****
 
 #### 📋 Choose Your Method
-👉 **[Installation Method Comparison & Decision Guide](INSTALL_ELASTICSEARCH.md)**
+👉 **[Installation Method Comparison 👉 **[Installation Method Comparison & Decision Guide](INSTALL_ELASTICSEARCH.md) Decision Guide](../installation/INSTALL_ELASTICSEARCH.md)****
 
 #### Docker (Alternative)
 ```bash

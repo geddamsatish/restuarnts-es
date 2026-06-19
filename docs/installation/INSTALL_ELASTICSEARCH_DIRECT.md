@@ -491,8 +491,8 @@ rm -rf ~/elasticsearch-data
 ## 🔗 Related Files
 
 - [INSTALL_ELASTICSEARCH_BREW.md](INSTALL_ELASTICSEARCH_BREW.md) - Homebrew installation
-- [SETUP.md](SETUP.md) - Complete setup guide
-- [README.md](README.md) - Project overview
+- [SETUP.md](../guides/SETUP.md) - Complete setup guide
+- [README.md](../../README.md) - Project overview
 
 ---
 

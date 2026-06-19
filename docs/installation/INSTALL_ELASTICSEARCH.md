@@ -155,9 +155,9 @@ curl -s http://localhost:9200 | jq '.'
 
 ```
 Do you want the easiest setup?
-├─ YES → Use Homebrew [INSTALL_ELASTICSEARCH_BREW.md]
+├─ YES → Use Homebrew [INSTALL_ELASTICSEARCH_BREW.md](INSTALL_ELASTICSEARCH_BREW.md)
 └─ NO  → Do you need multiple versions?
-         ├─ YES → Use Direct Installation [INSTALL_ELASTICSEARCH_DIRECT.md]
+         ├─ YES → Use Direct Installation [INSTALL_ELASTICSEARCH_DIRECT.md](INSTALL_ELASTICSEARCH_DIRECT.md)
          └─ NO  → Use Homebrew (it's still simpler)
 ```
 
@@ -230,8 +230,8 @@ source ~/.zshrc
 ### Need Help?
 
 Refer to the detailed guide for your chosen method:
-- **Homebrew Issues:** See [INSTALL_ELASTICSEARCH_BREW.md](INSTALL_ELASTICSEARCH_BREW.md)
-- **Direct Issues:** See [INSTALL_ELASTICSEARCH_DIRECT.md](INSTALL_ELASTICSEARCH_DIRECT.md)
+- **Homebrew Issues:** See [INSTALL_ELASTICSEARCH_BREW.md](INSTALL_ELASTICSEARCH_BREW.md)(INSTALL_ELASTICSEARCH_BREW.md)
+- **Direct Issues:** See [INSTALL_ELASTICSEARCH_DIRECT.md](INSTALL_ELASTICSEARCH_DIRECT.md)(INSTALL_ELASTICSEARCH_DIRECT.md)
 
 ---
 
