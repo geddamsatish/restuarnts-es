@@ -1,0 +1,50 @@
+{
+  "mappings": {
+    "properties": {
+      "comments": {
+        "type": "text",
+        "fields": {
+          "keyword": {
+            "type": "keyword",
+            "ignore_above": 256
+          }
+        }
+      },
+      "explanation": {
+        "type": "text",
+        "fields": {
+          "keyword": {
+            "type": "keyword",
+            "ignore_above": 256
+          }
+        }
+      },
+      "kanda": {
+        "type": "keyword"
+      },
+      "sarga": {
+        "type": "integer"
+      },
+      "shloka": {
+        "type": "integer"
+      },
+      "shloka_text": {
+        "type": "text",
+        "analyzer": "standard"
+      },
+      "translation": {
+        "type": "text",
+        "analyzer": "english"
+      },
+      "transliteration": {
+        "type": "text",
+        "fields": {
+          "keyword": {
+            "type": "keyword",
+            "ignore_above": 256
+          }
+        }
+      }
+    }
+  }
+}

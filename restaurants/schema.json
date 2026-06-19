@@ -1,0 +1,78 @@
+{
+  "mappings": {
+    "properties": {
+      "name": {
+        "type": "text",
+        "fields": {
+          "keyword": {
+            "type": "keyword"
+          }
+        }
+      },
+      "address": {
+        "type": "text"
+      },
+      "localAddress": {
+        "type": "keyword"
+      },
+      "addressObj": {
+        "type": "object",
+        "properties": {
+          "country": {
+            "type": "keyword"
+          },
+          "postalcode": {
+            "type": "keyword"
+          },
+          "state": {
+            "type": "keyword"
+          }
+        }
+      },
+      "cuisine": {
+        "type": "keyword"
+      },
+      "description": {
+        "type": "text"
+      },
+      "dietaryRestrictions": {
+        "type": "keyword"
+      },
+      "dishes": {
+        "type": "keyword"
+      },
+      "features": {
+        "type": "keyword"
+      },
+      "location": {
+        "type": "geo_point"
+      },
+      "mealType": {
+        "type": "keyword"
+      },
+      "numberOfReviews": {
+        "type": "integer"
+      },
+      "phone": {
+        "type": "keyword"
+      },
+      "rankingInfo": {
+        "type": "object",
+        "properties": {
+          "denominator": {
+            "type": "integer"
+          },
+          "position": {
+            "type": "integer"
+          }
+        }
+      },
+      "rating": {
+        "type": "float"
+      },
+      "rawRanking": {
+        "type": "float"
+      }
+    }
+  }
+}
