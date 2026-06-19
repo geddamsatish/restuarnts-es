@@ -2,7 +2,7 @@
 
 Elasticsearch integration for Kaggle's Bengaluru Restaurants dataset.
 
-**Dataset Source:** [Kaggle - Bengaluru Restaurants](https://www.kaggle.com/himanshuvaidya121/bengaluru-restaurants-more-on-theft)
+**Dataset Source:** [Kaggle - Bengaluru Restaurants](https://www.kaggle.com/datasets/mrmars1010/restaurants-dataset-bengaluru/data)
 
 ## Quick Stats
 
