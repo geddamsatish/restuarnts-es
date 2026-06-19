@@ -1,9 +1,6 @@
-# Data files
-*.csv
+# Data files (excluding main datasets)
 *.ndjson
-*.json
 !schema.json
-!example_data.json
 
 # Python
 __pycache__/
