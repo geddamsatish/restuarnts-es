@@ -61,7 +61,10 @@ curl http://localhost:9200
 ```
 restaurants-es/
 ├── README.md                      # This file (main overview)
-├── SETUP.md                       # Detailed setup instructions
+├── SETUP.md                       # Complete setup guide
+├── INSTALL_ELASTICSEARCH.md       # Installation methods comparison
+├── INSTALL_ELASTICSEARCH_BREW.md  # Homebrew installation guide
+├── INSTALL_ELASTICSEARCH_DIRECT.md # Direct installation guide
 ├── requirements.txt               # Python dependencies
 ├── .gitignore
 │
@@ -70,18 +73,18 @@ restaurants-es/
 │   ├── restaurants_converter.py  # CSV → JSON converter
 │   ├── schema.json               # Elasticsearch mapping
 │   ├── sample_queries.sh         # 10+ sample cURL queries
-│   └── example_data.json        # Sample document
+│   └── data/                     # Dataset folder
+│       ├── README.md             # Dataset information
+│       └── Bengaluru_Restaurants.csv (3.2 MB, 9,291 restaurants)
 │
 ├── ramayana/                      # 📖 Ramayana Dataset
 │   ├── README.md                 # Ramayana docs & sample queries
-│   ├── ramayana_converter.py     # JSON → Bulk format converter
+│   ├── ramayana_converter.py     # JSON converter
 │   ├── schema.json               # Elasticsearch mapping
 │   ├── sample_queries.sh         # 12+ sample cURL queries
-│   └── example_data.json        # Sample document
-│
-└── data/                          # Data files (included)
-    ├── Bengaluru_Restaurants.csv
-    └── ramayana.json
+│   └── data/                     # Dataset folder
+│       ├── README.md             # Dataset information
+│       └── ramayana.json (24 MB, 23,402 shlokas)
 ```
 
 ---
@@ -118,8 +121,8 @@ curl -X PUT "localhost:9200/ramayana" \
 
 ```bash
 # Convert data to bulk format
-python restaurants/restaurants_converter.py Bengaluru_Restaurants.csv restaurants.ndjson --ndjson
-python ramayana/ramayana_converter.py ramayana.json ramayana.ndjson --ndjson
+python restaurants/restaurants_converter.py restaurants/data/Bengaluru_Restaurants.csv restaurants.ndjson --ndjson
+python ramayana/ramayana_converter.py ramayana/data/ramayana.json ramayana.ndjson --ndjson
 
 # Add Elasticsearch bulk metadata
 for file in *.ndjson; do

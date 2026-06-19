@@ -13,32 +13,43 @@ cd restuarnts-es
 
 ### 2. Install Elasticsearch
 
-#### macOS (Homebrew)
+We provide detailed guides for different installation methods:
+
+#### 🍺 Using Homebrew (Recommended for Beginners)
 ```bash
 brew tap elastic/tap
 brew install elastic/tap/elasticsearch-full
-
-# Start Elasticsearch
-brew services start elasticsearch
-
-# Verify installation
+brew services start elastic/tap/elasticsearch-full
 curl http://localhost:9200
 ```
+👉 **[Complete Homebrew Guide](INSTALL_ELASTICSEARCH_BREW.md)**
 
-#### Docker
+#### 📥 Direct Installation (Recommended for Control)
+```bash
+mkdir -p ~/elasticsearch && cd ~/elasticsearch
+curl -O https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-8.10.0-darwin-aarch64.tar.gz
+tar -xzf elasticsearch-8.10.0-darwin-aarch64.tar.gz
+cd elasticsearch-8.10.0
+./bin/elasticsearch
+```
+👉 **[Complete Direct Installation Guide](INSTALL_ELASTICSEARCH_DIRECT.md)**
+
+#### 📋 Choose Your Method
+👉 **[Installation Method Comparison & Decision Guide](INSTALL_ELASTICSEARCH.md)**
+
+#### Docker (Alternative)
 ```bash
 docker run -d --name elasticsearch \
   -e discovery.type=single-node \
   -p 9200:9200 \
   -p 9300:9300 \
-  docker.elastic.co/elasticsearch/elasticsearch:8.0.0
+  docker.elastic.co/elasticsearch/elasticsearch:8.10.0
 ```
 
 #### Linux (Ubuntu/Debian)
 ```bash
 wget -qO - https://artifacts.elastic.co/GPG-KEY-elasticsearch | sudo apt-key add -
 sudo apt-get install -y elasticsearch
-
 sudo systemctl start elasticsearch
 ```
 

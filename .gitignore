@@ -1,6 +1,10 @@
-# Data files (excluding main datasets)
+# Generated files
 *.ndjson
+*.log
+
+# Keep schema files
 !schema.json
+!example_data.json
 
 # Python
 __pycache__/
